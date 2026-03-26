@@ -1,0 +1,33 @@
+<!-- {% extends "base.html" %}{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'ndb.css' %}">
+    <title>Hello, world!</title>    
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+    {% block body %}
+    <div class="container-fluid slbi">
+      <div class="row">
+        <div class="container">
+        <div class="row">
+            <div class="col">
+                <form class="abform" method="POST">
+                    {% csrf_token %}
+                    <label for="name" class="abl">Product Name</label>
+                    <input class="form-control abinputetext abit" name="fname" value={{ pro.name }} readonly required>                        
+                    <label for="img" class="abl">Product Image</label><br>
+                    <img src="/media/{{pro.img}}" width="150px" height="100px" style="border-radius: 15%;">           </form>
+            </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    {% endblock body %}
+    </body>
+</html> -->
